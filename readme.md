@@ -11,7 +11,7 @@ cd clients-viva/
 # Instale as depedências do Composer
 composer install
 
-# Crie um banco de dados com o nome 'viva' no PostgreSQL. Entre no SHELL
+# Crie um banco de dados no PostgreSQL. Entre no SHELL
 psql -U postgres -W
 
 # Crie um banco de dados com o nome 'viva'
