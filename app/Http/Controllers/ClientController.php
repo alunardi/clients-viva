@@ -19,10 +19,10 @@ class ClientController extends Controller
         $field = 'name';
 
         if ($request->get('order')) {
-            $order = $request->get('order');
+            $order = preg_replace('/[^[:alpha:]_]/', '', $request->get('order'));
         }
         if ($request->get('field')) {
-            $field = $request->get('field');
+            $field = preg_replace('/[^[:alpha:]_]/', '', $request->get('field'));
         }
 
         $clients = Client::where('status', '<>', $client::STATUS_EXCLUDED)
