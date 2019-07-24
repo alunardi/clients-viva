@@ -17,8 +17,8 @@ psql -U postgres -W
 # Crie um banco de dados com o nome 'viva'
 create database viva;
 
-# Na raiz do projeto (/cliets-viva), execute
+# Na raiz do projeto (/clients-viva), execute
 php artisan serve
 
-# Na raiz do projeto (/cliets-viva), execute a migration para criar as tabelas
+# Na raiz do projeto (/clients-viva), execute a migration para criar as tabelas
 php artisan migrate
